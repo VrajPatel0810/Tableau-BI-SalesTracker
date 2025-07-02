@@ -118,4 +118,8 @@ Sample SQL queries used for analysis:
 - Product-level profitability monitoring
 
 ---
+## Output
+![image](https://github.com/user-attachments/assets/4909a332-f11e-417c-8d9c-5ebd627b447c)
+![image](https://github.com/user-attachments/assets/27ba2794-b58d-4645-bd2f-e5a31072db40)
+
 
