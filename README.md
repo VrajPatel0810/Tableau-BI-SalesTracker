@@ -1,99 +1,121 @@
-# 📊 Sales Insights Dashboard (SQL + Tableau)
 
-This repository showcases a 2-phase real-world Business Intelligence (BI) project where I designed, developed, and iteratively improved Tableau dashboards based on stakeholder feedback. The project demonstrates strong technical, analytical, and storytelling skills using **MySQL**, **SQL**, and **Tableau**.
+# 📊 End-to-End Sales Insights Project (SQL + Tableau)
 
+This project is a comprehensive end-to-end business intelligence solution that analyzes retail sales data using **MySQL (SQL)** and visualizes key performance metrics using **Tableau dashboards**. It was completed in two distinct phases to reflect both independent analysis and stakeholder-driven improvements.
 
+---
 
 ## 🚀 Project Overview
 
-The goal of this project was to analyze and visualize a company's sales performance using structured transactional data. The insights support strategic decisions by providing both high-level KPIs and granular, actionable metrics.
+The aim was to simulate real-world business decision-making using data by creating dashboards that support revenue and profitability insights. The project includes:
 
-The project was executed in **two phases**:
+- **Structured data ingestion using MySQL**
+- **Custom SQL queries for insights**
+- **Interactive Tableau dashboards for storytelling**
+- **Stakeholder feedback loop for iterative development**
 
+---
 
+## 🔄 Two-Phase Workflow
 
-## 🟦 Phase 1: Revenue Dashboard – Executive Overview
+### 🟦 Phase 1: Revenue Dashboard – Executive Overview
 
-📌 Objective: Provide leadership with a clear snapshot of sales metrics across time, region, and currency.
+Built the initial dashboard focused on revenue metrics:
 
-**Key Features:**
+- Monthly revenue trends
+- Currency-wise and market-wise sales
+- Key revenue KPIs
+- Dynamic filtering by region, year, currency
 
-* Monthly revenue trends (line chart)
-* Market-wise revenue comparison
-* Currency-wise breakdown (INR/USD)
-* Dynamic filters for year, region, and market
-* Clean UI for executive consumption
+### 🟧 Phase 2: Profit Dashboard – Stakeholder-Informed Design
 
-**Tools Used:**
+After gathering feedback, the second dashboard focused on deeper insights into profitability:
 
-* MySQL for querying structured sales data
-* Tableau for visual exploration and dashboarding
-* SQL joins between `transactions`, `date`, and `customers` tables
+- Profit & profit margin metrics
+- Region and product-level profit breakdown
+- Monthly profitability trend
+- Top performing products
 
+These dashboards simulate an actual analyst-stakeholder collaboration loop.
 
-
-## 🟧 Phase 2: Profit Dashboard – Stakeholder-Driven Design
-
-📌 Objective: After the initial review, stakeholders requested deeper insights into **profitability** and **product-level performance**.
-
-**Enhancements Introduced:**
-
-* Profit and Profit Margin calculations (custom Tableau fields)
-* Top-performing products by profit
-* Region-wise profit visualization
-* Monthly profitability trends
-* Improved UX based on stakeholder input
-
-**Focus:** Drill-down analysis and ROI-centric storytelling
-
-
-
-## ✅ Results
-
-* 📊 Built two polished, interactive dashboards ready for real-world deployment
-* 🔄 Simulated the analyst-stakeholder feedback loop
-* 🧠 Developed critical BI skills: SQL querying, Tableau dashboarding, stakeholder collaboration
-* 🎯 Empowered business users to derive both strategic and operational insights
-
-
+---
 
 ## 🛠️ Tech Stack
 
-* **SQL & MySQL** – Data extraction, joins, aggregations
-* **Tableau Desktop** – Interactive visualization and dashboard design
-* **Tableau Prep** *(optional)* – For minor data cleaning and reshaping
-* **GitHub** – Project versioning and sharing
+- **SQL / MySQL** – Data querying and logic
+- **Tableau** – Data visualization and dashboard design
+- **Tableau Prep** *(optional)* – Minor data preparation
+- **GitHub** – Version control and documentation
 
+---
 
+## 🗂️ Project Files
 
-## 📁 Files Included
+- `db_dump.sql`: MySQL database with sales data
+- `Revenue.twb`: Tableau workbook for revenue insights (Phase 1)
+- `Profit Analysis.twb`: Tableau workbook for profit insights (Phase 2)
+- `README.md`: Project documentation
 
-* `db_dump.sql`: MySQL database dump with tables: `transactions`, `customers`, and `date`
-* `db_dump_version_2`: MySQL database dump with tables: `transactions`, `customers`, and `date`
-* `Revenue.twb`: Tableau workbook for Phase 1 (Revenue Dashboard)
-* `Profit Analysis.twb`: Tableau workbook for Phase 2 (Profit Dashboard)
-* `README.md`: Documentation for this project
+---
 
+## 📦 How to Set Up the Project Locally
 
+1. **Install MySQL** and import the `db_dump.sql` file:
+    ```sql
+    SOURCE path/to/db_dump.sql;
+    ```
+2. Open Tableau and connect to your local MySQL server.
+3. Load the `.twb` files for interactive dashboards.
+4. Explore filters, KPIs, and trends built into the dashboards.
 
-## 🔗 How to Use
+---
 
-1. Import the `db_dump.sql` into your MySQL server.
-2. Open Tableau Desktop and connect to the MySQL database.
-3. Load the `.twb` files to explore or edit the dashboards.
-4. Use filters and interactivity to explore insights by year, region, and more.
-   
+## 🧠 SQL Data Exploration
 
+Sample SQL queries used for analysis:
 
-## 💡 Want to Collaborate?
+- **Show all customer records**
+    ```sql
+    SELECT * FROM customers;
+    ```
 
-I'm always open to feedback, collaboration, and **opportunities across data-focused roles** including:
+- **Show distinct product codes sold in Chennai**
+    ```sql
+    SELECT DISTINCT product_code FROM transactions WHERE market_code='Mark001';
+    ```
 
-* Data Analyst
-* BI Developer
-* Data Engineer
-* Business Analyst
+- **Revenue in 2020**
+    ```sql
+    SELECT SUM(transactions.sales_amount)
+    FROM transactions
+    INNER JOIN date ON transactions.order_date = date.date
+    WHERE date.year = 2020
+      AND (transactions.currency = 'INR' OR transactions.currency = 'USD');
+    ```
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/vraj-patel-68310b188/).
+- **Profit margin formula (used in Tableau):**
+    ```
+    Profit = sales_amount - cost
+    Profit Margin = Profit / sales_amount
+    ```
 
+---
+
+## ✅ Key Outcomes
+
+- Developed two interactive Tableau dashboards with business KPIs
+- Demonstrated SQL proficiency in extracting time-based and market-specific insights
+- Applied stakeholder feedback to enhance dashboard usability
+- Strengthened data storytelling and BI project lifecycle understanding
+
+---
+
+## 💼 Use Cases
+
+- Executive reporting (high-level KPI tracking)
+- Sales strategy optimization
+- Regional performance analysis
+- Product-level profitability monitoring
+
+---
 
