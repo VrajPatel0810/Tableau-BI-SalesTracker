@@ -2,7 +2,7 @@
 
 This repository showcases a 2-phase real-world Business Intelligence (BI) project where I designed, developed, and iteratively improved Tableau dashboards based on stakeholder feedback. The project demonstrates strong technical, analytical, and storytelling skills using **MySQL**, **SQL**, and **Tableau**.
 
----
+
 
 ## 🚀 Project Overview
 
@@ -10,7 +10,7 @@ The goal of this project was to analyze and visualize a company's sales performa
 
 The project was executed in **two phases**:
 
----
+
 
 ## 🟦 Phase 1: Revenue Dashboard – Executive Overview
 
@@ -30,7 +30,7 @@ The project was executed in **two phases**:
 * Tableau for visual exploration and dashboarding
 * SQL joins between `transactions`, `date`, and `customers` tables
 
----
+
 
 ## 🟧 Phase 2: Profit Dashboard – Stakeholder-Driven Design
 
@@ -46,7 +46,7 @@ The project was executed in **two phases**:
 
 **Focus:** Drill-down analysis and ROI-centric storytelling
 
----
+
 
 ## ✅ Results
 
@@ -55,7 +55,7 @@ The project was executed in **two phases**:
 * 🧠 Developed critical BI skills: SQL querying, Tableau dashboarding, stakeholder collaboration
 * 🎯 Empowered business users to derive both strategic and operational insights
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -64,7 +64,7 @@ The project was executed in **two phases**:
 * **Tableau Prep** *(optional)* – For minor data cleaning and reshaping
 * **GitHub** – Project versioning and sharing
 
----
+
 
 ## 📁 Files Included
 
@@ -74,7 +74,7 @@ The project was executed in **two phases**:
 * `Profit Analysis.twb`: Tableau workbook for Phase 2 (Profit Dashboard)
 * `README.md`: Documentation for this project
 
----
+
 
 ## 🔗 How to Use
 
@@ -83,7 +83,7 @@ The project was executed in **two phases**:
 3. Load the `.twb` files to explore or edit the dashboards.
 4. Use filters and interactivity to explore insights by year, region, and more.
    
----
+
 
 ## 💡 Want to Collaborate?
 
