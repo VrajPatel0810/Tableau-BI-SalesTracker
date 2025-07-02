@@ -94,6 +94,6 @@ I'm always open to feedback, collaboration, and **opportunities across data-focu
 * Data Engineer
 * Business Analyst
 
-Feel free to connect with me on [https://www.linkedin.com/in/vraj-patel-68310b188/].
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/vraj-patel-68310b188/) or reach out for walkthroughs and demo access.
 
 
